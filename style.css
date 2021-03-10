@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #333;
+    color: #222;
+    overflow-x: hidden;
+    margin: 0;
+}
+.container {
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.1s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+nav {
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+.container.show-nav {
+    transform: translateX(150px)
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 30px;
+}
+nav ul li {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    transform: translateX(-150%);
+    transition: transform 0.4 ease-in;
+}
+a{
+    color:#fff;
+}
